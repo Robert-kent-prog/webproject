@@ -1,0 +1,159 @@
+p {
+  margin: 0;
+  font-size: 18px;
+}
+h2,
+h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about-section {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-text {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 100px; /* Adjust this value to match the navbar height */
+  line-height: 1.6;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white !important;
+  padding: 15px 20px; /* Adjust padding to control navbar height */
+}
+
+.navbar .nav-link {
+  color: #003366 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  color: #0056b3 !important;
+}
+
+.navbar-brand {
+  color: #003366 !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px; /* Adjust logo height as needed */
+  margin-right: 10px;
+}
+
+.custom-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav.ml-auto {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #343a40;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.social-icons a {
+  color: #003366;
+  font-size: 1.5em;
+}
+.icon-square {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.footer-heading {
+  border-bottom: 4px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.footer-divider {
+  border-top: 2px solid white;
+  width: 80%;
+  margin: 20px auto 0;
+}
+.footer-text {
+  text-align: center;
+  font-size: 23px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+  }
+  .navbar {
+    height: 150px;
+    margin-top: 0px;
+  }
+  /* Center navbar links and adjust spacing */
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Adjust margin for nav items on mobile */
+  .custom-nav .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px; /* Space between links */
+  }
+
+  body {
+    margin-top: 150px;
+  }
+  .email-text a {
+    word-break: break-word;
+  }
+  .border-box {
+    height: 70vh; /* Set height to 40% of the viewport height */
+  }
+  p {
+    font-size: 24px;
+  }
+  .footer-heading {
+    font-size: 24px; /* Larger heading font size for mobile */
+    margin-bottom: 10px; /* Space below heading */
+  }
+
+  .footer-text {
+    font-size: 16px; /* Adjust text size for the footer text */
+  }
+
+  .social-icons {
+    flex-wrap: wrap; /* Allow social icons to wrap */
+    justify-content: center; /* Center align social icons */
+  }
+
+  .social-icons a {
+    margin: 5px; /* Add margin between icons */
+  }
+
+  .list-unstyled {
+    padding-left: 0; /* Remove default padding */
+    text-align: center; /* Center align list items */
+  }
+}

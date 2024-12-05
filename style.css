@@ -1,0 +1,272 @@
+.btn-shiny-red {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  transition: all 0.3s ease-in-out;
+}
+.btn-shiny-red:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+  line-height: 1.6;
+}
+p {
+  margin: 0;
+  font-size: 18px;
+}
+h3 {
+  background: #c2f0c2;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about-section {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust as needed */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.mb-5 .container .row {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-history {
+  background-color: #f8f9fa;
+}
+
+.section-mission {
+  background-color: #e9ecef;
+}
+
+.section-vision {
+  background-color: #f8f9fa;
+}
+
+.section-policy {
+  background-color: #e9ecef;
+}
+
+.section-location {
+  background-color: #f8f9fa;
+}
+
+.section-values {
+  background-color: #e9ecef;
+}
+
+.section-management {
+  background-color: #f8f9fa;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+.custom-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav.ml-auto {
+  margin-right: 20px;
+}
+
+li {
+  font-size: 20px;
+}
+.navbar-brand img {
+  vertical-align: middle;
+}
+email-text {
+  white-space: nowrap;
+}
+
+.email-text a {
+  word-break: break-all;
+}
+
+.grid-section {
+  padding: 2rem 0;
+}
+/* .grid-section h3 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  } */
+.icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+.border-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar .nav-link {
+  color: #003366 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #0056b3 !important;
+}
+
+.navbar-brand {
+  color: #003366 !important;
+}
+
+.navbar-brand:hover {
+  color: #0056b3 !important;
+}
+.navbar-toggler-icon {
+  color: #0056b3 !important;
+}
+.social-icons a {
+  color: #003366; /* Dark blue color */
+  font-size: 1.5em; /* Size of icons */
+}
+.icon-square {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Adjust the corner rounding */
+}
+
+.footer-heading {
+  display: inline-block;
+  border-bottom: 4px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.footer-divider {
+  border-top: 2px solid white;
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.9em;
+  font-size: 23px;
+}
+
+.product-card {
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-animation {
+  transition: opacity 0.5s ease-in-out;
+  /* Other properties */
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+  body {
+    margin-top: 150px;
+  }
+  .email-text a {
+    word-break: break-word;
+  }
+  .border-box {
+    height: 70vh; /* Set height to 40% of the viewport height */
+  }
+  p {
+    font-size: 24px;
+  }
+  .footer-heading {
+    font-size: 24px; /* Larger heading font size for mobile */
+    margin-bottom: 10px; /* Space below heading */
+  }
+
+  .footer-text {
+    font-size: 16px; /* Adjust text size for the footer text */
+  }
+
+  .social-icons {
+    flex-wrap: wrap; /* Allow social icons to wrap */
+    justify-content: center; /* Center align social icons */
+  }
+
+  .social-icons a {
+    margin: 5px; /* Add margin between icons */
+  }
+
+  .list-unstyled {
+    padding-left: 0; /* Remove default padding */
+    text-align: center; /* Center align list items */
+  }
+}

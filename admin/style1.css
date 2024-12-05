@@ -1,0 +1,83 @@
+/* css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+/* Make the sidebar opaque */
+.sidebar {
+  background-color: #63a7ec; /* Solid color without transparency */
+  color: white;
+  height: calc(100vh - 20px); /* Adjusted height */
+  max-height: 400px; /* Limit height to avoid overflow */
+  padding: 15px;
+  position: fixed;
+  top: 65px; /* Matches the navbar height */
+  left: 0;
+  width: 200px;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  z-index: 1000; /* Ensures sidebar stays above main content */
+}
+.sidebar-close {
+  background-color: transparent; /* Make the button transparent */
+  border: none; /* Remove border */
+  color: white; /* White color for visibility */
+  font-size: 2.5rem; /* Make it larger */
+  position: absolute; /* Position it at the top right */
+  right: 3px; /* Positioning */
+  top: 5px; /* Positioning */
+  z-index: 1001; /* Ensure it's above the sidebar */
+}
+main {
+  margin-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px; /* Optional padding for main content */
+}
+.sidebar.active .sidebar-close {
+  display: block; /* Show when sidebar is active */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    top: 140px;
+    height: 300px;
+    transform: translateX(-100%); /* Hide sidebar off-screen */
+  }
+  main {
+    margin-left: 0;
+  }
+  .sidebar.active {
+    transform: translateX(0); /* Slide sidebar in */
+  }
+  .sidebar-close {
+    display: block !important; /* Force display for testing */
+  }
+  .sidebar.active .sidebar-close {
+    display: block; /* Show when sidebar is active */
+  }
+}
