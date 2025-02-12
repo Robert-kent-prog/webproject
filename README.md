@@ -77,7 +77,7 @@ To run this project locally, you need the following tools installed on your mach
 ### Setup Instructions
 
 #### **Clone the Repository**
-```bash
+'''
 git clone https://github.com/your-repo-url/boutique-ecommerce.git
 
 ## Set Up the Web Server
